@@ -1,3 +1,4 @@
+# -*- coding: UTF-8 -*-
 """
 Django settings for django_blog project.
 
@@ -9,6 +10,7 @@ https://docs.djangoproject.com/en/1.10/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.10/ref/settings/
 """
+
 
 import os
 
@@ -64,6 +66,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'blog.views.global_setting'
             ],
         },
     },
@@ -125,3 +128,8 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
 ALLOWED_HOSTS = ['*']
+
+
+#groble Var
+WEB_NAME = '珲少的个人博客'
+WEB_DES = '一二三四，陈年往事；五六七八，似锦繁华'
